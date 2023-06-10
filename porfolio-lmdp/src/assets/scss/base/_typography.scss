@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+// DEFAULT
+@layer base {
+  html, .p-component, .p-inputtext {
+    font-family: $FONT_FAMILY !important;
+    letter-spacing: 0.15px;
+  }
+}
+
+@layer components {
+  // FONT SCALES
+  .text-h1 {
+    @apply text-8xl leading-[115px] tracking-[-1.5px];
+  }
+
+  .text-h2 {
+    @apply text-6xl font-bold leading-[72px] tracking-[-0.5px];
+  }
+
+  .text-h3 {
+    @apply text-5xl font-bold leading-[58px];
+  }
+
+  .text-h4 {
+    @apply text-4xl font-bold leading-[41px] tracking-[0.25px];
+  }
+
+  .text-h5 {
+    @apply text-2xl font-medium leading-[24px];
+  }
+
+  .text-h6 {
+    @apply text-xl font-medium leading-[24px] tracking-[0.15px];
+  }
+
+  .text-subtitle-1 {
+    @apply text-base leading-[19px] tracking-[0.15px];
+  }
+
+  .text-subtitle-2 {
+    @apply text-sm leading-[17px] tracking-[0.1px];
+  }
+
+  .text-body-1 {
+    @apply text-base leading-[19px] tracking-[0.5px];
+  }
+
+  .text-body-2 {
+    @apply text-sm leading-[17px] tracking-[0.25px];
+  }
+
+  .text-small {
+    @apply text-xs leading-[20px];
+  }
+
+  .text-button {
+    @apply text-xs font-bold leading-[14px] tracking-[0.15px];
+  }
+
+  .text-caption {
+    @apply text-xxs leading-[16px] tracking-[0.25px];
+  }
+
+  .text-badge {
+    @apply text-xxs font-medium leading-[16px] tracking-[0.25px];
+  }
+
+  .text-xxsmall {
+    @apply text-xxs leading-[16px] tracking-[0.25px];
+  }
+}
+
